@@ -4,6 +4,7 @@ public class main {
 
         // Agregar algunos libros
         library.addBook(new Book("1984", "George Orwell"));
+        library.addBook(new Book("1984", "George Orwell"));
         library.addBook(new Book("To Kill a Mockingbird", "Harper Lee"));
 
         // Listar los libros
@@ -23,13 +24,13 @@ public class main {
         } else {
             System.out.println("Libro no encontrado.");
         }
-<<<<<<< HEAD
+
         
         library.removeBook("1984");
     }
 }
-=======
+
     }
 }
 
->>>>>>> origin
+

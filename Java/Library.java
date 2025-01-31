@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Library {
@@ -10,6 +11,15 @@ public class Library {
 
     // Funcionalidad para agregar un libro
     public void addBook(Book book) {
+        // Validamos si el libro ya existe en la lista
+        for (Book b : books) {
+            if (b.getTitle().equals(book.getTitle()) && b.getAuthor().equals(book.getAuthor())) {
+                System.out.println("El libro ya existe en la lista: " + book);
+                return;  // Salimos del método sin agregar el libro
+            }
+        }
+
+        // Si no existe, agregamos el libro
         books.add(book);
         System.out.println("Libro agregado: " + book);
     }
@@ -26,10 +36,6 @@ public class Library {
                 System.out.println(book);
             }
         }
-    }
-
-
-
         System.out.println("Lista de libros:");
         for (Book book : books) {
             System.out.println(book);
@@ -66,16 +72,9 @@ public class Library {
         } else {
             System.out.println("No se encontró el libro con el título: " + title);
         }
+    
     }
-}
-
-        for(Book book : books){
-            if (book.getAuthor().equalsIgnoreCase(author)){
-            return book;
-            }
-        }
-        return null;
-       }
+       
 
 }
 
