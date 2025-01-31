@@ -48,7 +48,7 @@ public class Library {
     }
 
     public Book findBookByAuthor(String author){
-<<<<<<< HEAD
+
          for(Book book : books){
              if (book.getAuthor().equalsIgnoreCase(author)){
                return book;
@@ -79,4 +79,3 @@ public class Library {
 
 }
 
->>>>>>> origin
