@@ -16,6 +16,7 @@ public class Library {
 
     // Funcionalidad para listar todos los libros
     public void listBooks() {
+
         if (books.isEmpty()) {
             System.out.println("No hay libros para mostrar.");
         } else {
@@ -24,6 +25,14 @@ public class Library {
             for (Book book : books) {
                 System.out.println(book);
             }
+        }
+    }
+
+
+
+        System.out.println("Lista de libros:");
+        for (Book book : books) {
+            System.out.println(book);
         }
     }
 
@@ -39,6 +48,7 @@ public class Library {
     }
 
     public Book findBookByAuthor(String author){
+<<<<<<< HEAD
          for(Book book : books){
              if (book.getAuthor().equalsIgnoreCase(author)){
                return book;
@@ -58,3 +68,15 @@ public class Library {
         }
     }
 }
+
+        for(Book book : books){
+            if (book.getAuthor().equalsIgnoreCase(author)){
+            return book;
+            }
+        }
+        return null;
+       }
+
+}
+
+>>>>>>> origin

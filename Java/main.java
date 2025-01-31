@@ -23,7 +23,13 @@ public class main {
         } else {
             System.out.println("Libro no encontrado.");
         }
+<<<<<<< HEAD
         
         library.removeBook("1984");
     }
 }
+=======
+    }
+}
+
+>>>>>>> origin
