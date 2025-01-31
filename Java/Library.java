@@ -27,6 +27,7 @@ public class Library {
         }
     }
 
+
     // Funcionalidad para buscar un libro por título
     public Book findBookByTitle(String title) {
         for (Book book : books) {
@@ -36,6 +37,15 @@ public class Library {
         }
         return null;
     }
+
+    public Book findBookByAuthor(String author){
+         for(Book book : books){
+             if (book.getAuthor().equalsIgnoreCase(author)){
+               return book;
+             }
+         }
+         return null;
+     }
 
     // Funcionalidad para eliminar un libro por título
     public void removeBook(String title) {
