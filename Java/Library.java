@@ -31,8 +31,8 @@ public class Library {
         }
         return null;
     }
-<<<<<<< HEAD
-    public Book findBookByAutor(String author){
+
+    public Book findBookByAuthor(String author){
         for(Book book : books){
             if (book.getAuthor().equalsIgnoreCase(author)){
             return book;

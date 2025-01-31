@@ -1,4 +1,4 @@
-public class Main {
+public class main {
     public static void main(String[] args) {
         Library library = new Library();
 
@@ -13,6 +13,13 @@ public class Main {
         Book foundBook = library.findBookByTitle("1984");
         if (foundBook != null) {
             System.out.println("Libro encontrado: " + foundBook);
+        } else {
+            System.out.println("Libro no encontrado.");
+        }
+        
+        Book foundBook2 = library.findBookByAuthor("Harper Lee");
+        if (foundBook != null) {
+            System.out.println("Libro encontrado: " + foundBook2);
         } else {
             System.out.println("Libro no encontrado.");
         }
